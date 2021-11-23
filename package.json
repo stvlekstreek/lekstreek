@@ -79,6 +79,7 @@
     "not ie <= 8"
   ],
   "dependencies": {
+    "@braid/vue-formulate": "^2.5.2",
     "@fortawesome/fontawesome-svg-core": "1.2.36",
     "@fortawesome/free-solid-svg-icons": "5.15.4",
     "@fortawesome/vue-fontawesome": "2.0.6",
@@ -128,7 +129,7 @@
     "file-loader": "6.2.0",
     "folder-hash": "4.0.1",
     "fork-ts-checker-webpack-plugin": "6.3.4",
-    "generator-jhipster": "7.3.1",
+    "generator-jhipster": "^7.4.0",
     "html-webpack-plugin": "5.4.0",
     "husky": "7.0.2",
     "jest": "27.3.0",

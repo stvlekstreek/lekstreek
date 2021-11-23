@@ -101,7 +101,7 @@ spring:
       hibernate.query.fail_on_pagination_over_collection_fetch: true
       hibernate.query.in_clause_parameter_padding: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
       naming:
         physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
@@ -130,11 +130,11 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://localhost:9080/auth/realms/jhipster
+            issuer-uri: https://dev-t4i24158.eu.auth0.com/
         registration:
           oidc:
-            client-id: web_app
-            client-secret: web_app
+            client-id: xnnXnZQacdCH1wPvU0cRgapGgn75vvWd
+            client-secret: X7Hl9fDgNOlO6wE-fA9uTkWGyqkeF-HqYV_kkyqhmY4gTm2SdcWAofIX6wpBqHBO
             scope: openid,profile,email
 
 server:
@@ -183,8 +183,8 @@ jhipster:
     content-security-policy: "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:"
     oauth2:
       audience:
-        - account
-        - api://default
+        #- account
+        - https://dev-t4i24158.eu.auth0.com/api/v2/
 # ===================================================================
 # Application specific properties
 # Add your own application properties here, see the ApplicationProperties class
