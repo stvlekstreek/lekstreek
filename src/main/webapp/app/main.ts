@@ -1,6 +1,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.common with an alias.
 import Vue from 'vue';
+import VueFormulate from '@braid/vue-formulate';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './app.vue';
 import Vue2Filters from 'vue2-filters';
@@ -33,6 +34,7 @@ Vue.config.productionTip = false;
 config.initVueApp(Vue);
 config.initFortAwesome(Vue);
 bootstrapVueConfig.initBootstrapVue(Vue);
+Vue.use(VueFormulate);
 Vue.use(Vue2Filters);
 Vue.use(ToastPlugin);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
